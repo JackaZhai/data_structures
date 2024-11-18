@@ -25,7 +25,6 @@ void remove(ListNode *n0) {
     delete n1;
 }
 
-
 /* 访问链表中索引为 index 的节点 */
 ListNode *access(ListNode *head, int index) {
     for (int i = 0; i < index; i++) {
