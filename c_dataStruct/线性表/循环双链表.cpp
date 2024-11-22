@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -36,7 +33,6 @@ int List_Length(DLinkList pHead) {
 }
 
 
-// totuma.cn
 // 创建循环双链表，头插法结果为倒叙
 DLinkList List_Create(DLinkList& pHead) {
   DNode* pTemp; int x;
@@ -56,7 +52,6 @@ DLinkList List_Create(DLinkList& pHead) {
 }
 
 
-// totuma.cn
 // 创建循环双链表-通过尾插法
 DLinkList List_Create_Tail_Insert(DLinkList& pHead) {
   DNode* pTemp;
@@ -77,7 +72,6 @@ DLinkList List_Create_Tail_Insert(DLinkList& pHead) {
 }
 
 
-// totuma.cn
 // 按位序插入，i=1插在表头，i=length+1插在表尾
 bool List_Insert(DLinkList& pHead, int i, int e) {
   if (i < 1 || i > List_Length(pHead) + 1) return false;
@@ -97,7 +91,6 @@ bool List_Insert(DLinkList& pHead, int i, int e) {
 }
 
 
-// totuma.cn
 // 通过值获取结点和其位序
 DNode* List_Get_Elem(DLinkList pHead, int e, int& i) {
   i = 1;
@@ -111,7 +104,7 @@ DNode* List_Get_Elem(DLinkList pHead, int e, int& i) {
 }
 
 
-// totuma.cn
+
 // 按位序删除，i=1删表头，i=length删头尾
 bool List_Del(DLinkList& pHead, int i) {
   if (i < 1 || i > List_Length(pHead)) return false;
@@ -127,7 +120,7 @@ bool List_Del(DLinkList& pHead, int i) {
 }
 
 
-// totuma.cn
+
 // 打印循环双链表所有值
 void List_Show(DLinkList pHead) {
   DNode* node = pHead->next;

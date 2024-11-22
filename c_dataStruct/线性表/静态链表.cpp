@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #define MAX_SIZE 7
 
@@ -16,7 +13,6 @@ typedef struct {
 } SLinkList[MAX_SIZE];
 
 
-// totuma.cn
 // 初始化静态链表
 void Initialize(SLinkList list) {
   // 0号结点充当“头结点”，不具体存放数据
@@ -29,7 +25,6 @@ void Initialize(SLinkList list) {
 }
 
 
-// totuma.cn
 // 插入操作
 int Insert(SLinkList list, int position, ElemType data) {
   // 找到一个空闲结点
@@ -66,7 +61,6 @@ int Insert(SLinkList list, int position, ElemType data) {
 }
 
 
-// totuma.cn
 // 按值查找操作
 int FindByValue(SLinkList list, ElemType value) {
   int current = list[0].next; // 从第一个数据结点开始
@@ -89,7 +83,6 @@ int FindByValue(SLinkList list, ElemType value) {
 }
 
 
-// totuma.cn
 // 删除操作
 int Delete(SLinkList list, int position) {
   int current = 0; // 从头结点开始
@@ -122,7 +115,6 @@ int Delete(SLinkList list, int position) {
 }
 
 
-// totuma.cn
 // 输出静态链表
 void PrintList(SLinkList list) {
   int current = list[0].next; // 从第一个数据结点开始
@@ -134,7 +126,6 @@ void PrintList(SLinkList list) {
 }
 
 
-// totuma.cn
 int main() {
   SLinkList list;
   Initialize(list);

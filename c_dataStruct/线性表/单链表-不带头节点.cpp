@@ -1,8 +1,5 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 typedef struct LNode {
     int data;
     struct LNode * next;
@@ -28,8 +25,6 @@ int List_Length (LinkList pHead)
   return count;
 }
 
-
-// totuma.cn
 // 创建链表，头插结果为倒叙
 LinkList List_Create(LinkList &pHead) {
     LNode *pTemp; int x;
@@ -44,8 +39,6 @@ LinkList List_Create(LinkList &pHead) {
     return pHead;
 }
 
-
-// totuma.cn
 // 按位序插入，i=1插在表头，i=length+1插在表尾
 bool List_Insert(LinkList &pHead, int i, int e) {
     if (i < 1 || i > List_Length(pHead) + 1) return false;
@@ -69,8 +62,6 @@ bool List_Insert(LinkList &pHead, int i, int e) {
     return true;
 }
 
-
-// totuma.cn
 // 通过值获取结点和位序
 LNode* List_Get_Elem (LinkList pHead, int e, int &i) {
   i = 1;
@@ -83,7 +74,6 @@ LNode* List_Get_Elem (LinkList pHead, int e, int &i) {
 }
 
 
-// totuma.cn
 // 按位序删除，i=1删表头，i=length删头尾
 bool List_Del (LinkList &pHead, int i) {
     if (i < 1 || i > List_Length(pHead)) return false;
@@ -103,7 +93,6 @@ bool List_Del (LinkList &pHead, int i) {
 }
 
 
-// totuma.cn
 // 打印链表所有值
 void List_Show (LinkList pHead) {
     LNode *node = pHead;

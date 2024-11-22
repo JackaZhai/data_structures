@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <iostream>
 using namespace std;
 // 定义双链表结构
@@ -33,7 +30,6 @@ int DList_Length (DLinkList pHead)
 }
 
 
-// totuma.cn
 // 创建双链表，头插结果为倒叙（带头节点）
 DLinkList DList_Create(DLinkList &pHead) {
   DNode *pTemp; int x;
@@ -53,8 +49,6 @@ DLinkList DList_Create(DLinkList &pHead) {
   return pHead;
 }
 
-
-// totuma.cn
 // 按位序插入，i=1插在表头，i=length+1插在表尾
 bool DList_Insert(DLinkList &pHead, int i, int e) {
   if (i < 1 || i > DList_Length(pHead) + 1) return false;
@@ -77,7 +71,6 @@ bool DList_Insert(DLinkList &pHead, int i, int e) {
 }
 
 
-// totuma.cn
 // 通过值获取结点和其位序
 DNode* DList_Get_Elem (DLinkList pHead, int e, int &i) {
   i = 1;
@@ -90,7 +83,6 @@ DNode* DList_Get_Elem (DLinkList pHead, int e, int &i) {
 }
 
 
-// totuma.cn
 // 按位序删除，i=1删表头，i=length删头尾
 bool DList_Del (DLinkList &pHead, int i) {
   if (i < 1 || i > DList_Length(pHead)) return false;
@@ -108,7 +100,6 @@ bool DList_Del (DLinkList &pHead, int i) {
 }
 
 
-// totuma.cn
 // 打印链表所有值
 void DList_Show (DLinkList pHead) {
   DNode *node = pHead->next;
@@ -175,4 +166,4 @@ int main() {
 
   printf("链表判空：%s\n", DList_Empty(pHead) ? "空" : "非空");
   return 0;
-}s
+}

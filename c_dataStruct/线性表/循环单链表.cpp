@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -34,7 +31,6 @@ int List_Length(LinkList pHead) {
 }
 
 
-// totuma.cn
 // 创建循环单链表，头插法结果为倒叙
 LinkList List_Create(LinkList& pHead) {
   LNode* pTemp; int x; // 临时节点指针
@@ -50,7 +46,6 @@ LinkList List_Create(LinkList& pHead) {
 }
 
 
-// totuma.cn
 // 创建循环单链表-通过尾插法
 LinkList List_Create_Tail_Insert(LinkList& pHead) {
   LNode* pTemp; // 临时节点指针
@@ -69,7 +64,6 @@ LinkList List_Create_Tail_Insert(LinkList& pHead) {
 }
 
 
-// totuma.cn
 // 按位序插入，i=1插在表头，i=length+1插在表尾
 bool List_Insert(LinkList& pHead, int i, int e) {
   if (i < 1 || i > List_Length(pHead) + 1) return false;  // 检查插入位置是否有效
@@ -87,7 +81,6 @@ bool List_Insert(LinkList& pHead, int i, int e) {
 }
 
 
-// totuma.cn
 // 通过值获取结点和其位序
 LNode* List_Get_Elem(LinkList pHead, int e, int& i) {
   i = 1;
@@ -101,7 +94,6 @@ LNode* List_Get_Elem(LinkList pHead, int e, int& i) {
 }
 
 
-// totuma.cn
 // 按位序删除，i=1删表头，i=length删头尾
 bool List_Del(LinkList& pHead, int i) {
   if (i < 1 || i > List_Length(pHead)) return false;
@@ -116,7 +108,6 @@ bool List_Del(LinkList& pHead, int i) {
 }
 
 
-// totuma.cn
 // 打印循环单链表所有值
 void List_Show(LinkList pHead) {
   LNode* node = pHead->next;

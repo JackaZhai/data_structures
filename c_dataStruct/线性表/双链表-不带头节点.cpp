@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include<stdlib.h>
 using namespace std;
@@ -34,7 +31,6 @@ int DList_Length(DLinkList pHead) {
 }
 
 
-// totuma.cn
 // 创建双链表，头插结果为倒序（不带头节点）
 DLinkList DList_Create(DLinkList &pHead) {
   pHead = NULL; // 初始化链表头指针为空，表示链表为空
@@ -56,7 +52,6 @@ DLinkList DList_Create(DLinkList &pHead) {
 }
 
 
-// totuma.cn
 // 按位序插入，i=1插在表头，i=length+1插在表尾
 bool DList_Insert(DLinkList &pHead, int i, int e) {
   // 检查插入位置的有效性
@@ -91,7 +86,6 @@ bool DList_Insert(DLinkList &pHead, int i, int e) {
 }
 
 
-// totuma.cn
 // 通过值获取结点和其位序
 DNode* DList_Get_Elem(DLinkList pHead, int e, int &i) {
   i = 1;
@@ -104,7 +98,6 @@ DNode* DList_Get_Elem(DLinkList pHead, int e, int &i) {
 }
 
 
-// totuma.cn
 // 按位序删除，i=1删表头，i=length删头尾
 bool DList_Del(DLinkList &pHead, int i) {
    // 检查删除位置的有效性
@@ -134,8 +127,6 @@ bool DList_Del(DLinkList &pHead, int i) {
   return true;
 }
 
-
-// totuma.cn
 // 打印链表所有值
 void DList_Show(DLinkList pHead) {
   DNode *node = pHead;
