@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,7 +14,6 @@ typedef struct {
 } MGraph;
 
 
-// totuma.cn
 // 创建邻接矩阵
 int Graph_Create (MGraph &G) {
   int vi, vj, weight;
@@ -53,7 +49,6 @@ int Graph_Create (MGraph &G) {
 }
 
 
-// totuma.cn
 // 找到未在最小生成树中且边权值最小的顶点
 int Find_Min_V(MGraph G, int cost[], bool visited[]) {
   int minCost = INF; // 最小边权值初始设为无穷大
@@ -69,7 +64,6 @@ int Find_Min_V(MGraph G, int cost[], bool visited[]) {
 }
 
 
-// totuma.cn
 // v 为开始顶点
 void Prim (MGraph G, int v) {
   int parent[MAXVEX]; // 记录每个顶点在最小生成树中的父节点
@@ -115,7 +109,6 @@ void Prim (MGraph G, int v) {
 }
 
 
-// totuma.cn
 // 打印图
 void Graph_Show (MGraph G) {
   // 打印顶点

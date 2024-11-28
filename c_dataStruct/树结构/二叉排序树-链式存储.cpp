@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 // 树存储结构
@@ -43,7 +40,6 @@ bool Queue_De(SqQueue &Q, BSTree &e) {
 }
 
 
-// totuma.cn
 // 插入关键字为 k 的新结点
 int BST_Insert (BSTree &tree, int s) {
   if (tree == NULL) { // 传入的为空节点，新插入的结点为根节点
@@ -60,7 +56,6 @@ int BST_Insert (BSTree &tree, int s) {
 }
 
 
-// totuma.cn
 // tree 根节点、 nums 数组、len 数组长度
 void BST_Create (BSTree &tree, char* nums, int len) {
   tree = NULL;
@@ -70,7 +65,6 @@ void BST_Create (BSTree &tree, char* nums, int len) {
 }
 
 
-// totuma.cn
 // 删除结点
 void BST_Delete (BSTree &tree, int e) {
   // 要删除的结点
@@ -146,7 +140,6 @@ void BST_Delete (BSTree &tree, int e) {
 }
 
 
-// totuma.cn
 // 先序遍历: 根左右(NLR)
 void Order_Pre(BSTree tree) {
   if(tree == NULL) return;
@@ -156,7 +149,6 @@ void Order_Pre(BSTree tree) {
 }
 
 
-// totuma.cn
 // 中序遍历: 左根右(LNR)
 void Order_In(BSTree tree) {
   if(tree == NULL) return;
@@ -166,7 +158,6 @@ void Order_In(BSTree tree) {
 }
 
 
-// totuma.cn
 // 后序遍历: 左根右(LRN)
 void Order_Post(BSTree tree) {
   if(tree == NULL) return;
@@ -176,7 +167,6 @@ void Order_Post(BSTree tree) {
 }
 
 
-// totuma.cn
 // 层次遍历
 void Order_Level (BSTree tree) {
   SqQueue Q; // 初始化队列
@@ -194,7 +184,6 @@ void Order_Level (BSTree tree) {
 }
 
 
-// totuma.cn
 int main() {
   char nums[11] = {50,30,60,40,70,10,20,80};
   BSTree tree;

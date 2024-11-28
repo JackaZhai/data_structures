@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,7 +14,6 @@ typedef struct {
 } MGraph;
 
 
-// totuma.cn
 // 创建邻接矩阵
 int Graph_Create (MGraph &G) {
   int vi, vj, weight;
@@ -53,7 +49,6 @@ int Graph_Create (MGraph &G) {
 }
 
 
-// totuma.cn
 // 实现贝尔曼-福特算法的函数
 // 计算从源顶点到其他顶点的最短路径并输出
 void BellmanFord (MGraph G, int src) {
@@ -118,7 +113,6 @@ void BellmanFord (MGraph G, int src) {
 }
 
 
-// totuma.cn
 // 打印图
 void Graph_Show (MGraph G) {
   // 打印顶点

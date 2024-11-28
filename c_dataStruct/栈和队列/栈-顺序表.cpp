@@ -1,8 +1,8 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
+// 栈 顺序表
 // 定义栈中元素的最大个数
 #define MAX_SIZE 10
 
@@ -12,29 +12,24 @@ typedef struct {
 } SqStack;
 
 
-
-// totuma.cn
 // 初始化栈
 void Stack_Init(SqStack &S) {
   S.top = -1; // 初始化栈顶指针为-1，表示栈为空
 }
 
 
-// totuma.cn
 // 判断栈是否为空
 bool Stack_Empty(SqStack S) {
   return S.top == -1;
 }
 
 
-// totuma.cn
 // 判断栈是否已满
 bool Stack_Full(SqStack S) {
   return S.top == MAX_SIZE - 1;
 }
 
 
-// totuma.cn
 // 新元素入栈
 bool Stack_Push(SqStack &S, char x) {
   if (Stack_Full(S)) {
@@ -47,7 +42,6 @@ bool Stack_Push(SqStack &S, char x) {
 }
 
 
-// totuma.cn
 // 栈顶元素出栈，x为出栈的栈顶元素
 bool Stack_Pop(SqStack &S, char &x) {
   if (Stack_Empty(S)) {
@@ -60,7 +54,6 @@ bool Stack_Pop(SqStack &S, char &x) {
 }
 
 
-// totuma.cn
 int main() {
   SqStack stack;
   Stack_Init(stack);
@@ -81,3 +74,4 @@ int main() {
 
   return 0;
 }
+

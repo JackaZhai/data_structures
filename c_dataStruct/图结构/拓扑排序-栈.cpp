@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -93,7 +90,6 @@ void ALGraph_AddEdge(ALGraph &graph, int source, int target, ArcWeight weight) {
 }
 
 
-// totuma.cn
 void ALGraph_Create (ALGraph &G) {
   // 对顶点表结点进行初始化
   for (int i = 0; i < MaxVertexNum; i++) {
@@ -123,7 +119,6 @@ void ALGraph_Create (ALGraph &G) {
 }
 
 
-// totuma.cn
 // 拓扑排序
 bool TopologicalSort (ALGraph G) {
   int indegree[MaxVertexNum] = {0}; // 存放每个顶点的入度
@@ -169,7 +164,6 @@ bool TopologicalSort (ALGraph G) {
 }
 
 
-// totuma.cn
 void ALGraph_Show (ALGraph G) {
   for (int i = 0; i < G.vexnum; i++) {
     printf("%c", G.adjList[i].data);

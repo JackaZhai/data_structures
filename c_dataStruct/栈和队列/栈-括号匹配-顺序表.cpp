@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <iostream>
 
 // 定义栈中元素的最大个数
@@ -49,7 +46,6 @@ bool Stack_Pop(SqStack &S, char &x) {
 }
 
 
-// totuma.cn
 // 括号匹配函数
 bool Bracket_Match(char str[], int n) {
   SqStack S;            // 创建一个栈
@@ -85,7 +81,6 @@ bool Bracket_Match(char str[], int n) {
 }
 
 
-// totuma.cn
 int main() {
   char str[] = "{[()]}";
   int n = strlen(str);

@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -53,7 +50,6 @@ void replaceParentheses(char *str) {
 }
 
 
-// totuma.cn
 // 函数用于将中缀表达式转换为后缀表达式
 bool infixToPostfix(char* infix, char* postfix) {
   int i, j;
@@ -112,7 +108,6 @@ bool infixToPostfix(char* infix, char* postfix) {
 }
 
 
-// totuma.cn
 // 函数用于将中缀表达式转换为前缀表达式
 void infixToPrefix(char *infix, char *prefix) {
   int len = strlen(infix);
@@ -131,7 +126,6 @@ void infixToPrefix(char *infix, char *prefix) {
 }
 
 
-// totuma.cn
 // 主函数
 int main() {
   char infix[MAX_EXPR_SIZE] = "A+B*(C-D)-E/F";

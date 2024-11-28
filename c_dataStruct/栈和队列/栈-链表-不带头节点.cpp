@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -47,7 +44,6 @@ LinkStack Stack_Create(LinkStack &pStack) {
 }
 
 
-// totuma.cn
 // 新元素入栈
 bool Stack_Push(LinkStack &pStack, int e) {
   LNode *pTemp = (LNode *)malloc(sizeof(LNode));
@@ -58,7 +54,6 @@ bool Stack_Push(LinkStack &pStack, int e) {
 }
 
 
-// totuma.cn
 // 出栈
 bool Stack_Pop(LinkStack &pStack, int &e) {
   if (pStack == NULL) return false;
@@ -70,14 +65,12 @@ bool Stack_Pop(LinkStack &pStack, int &e) {
 }
 
 
-// totuma.cn
 // 返回第一个
 LNode *Stack_Get_Top(LinkStack pStack) {
   return pStack;
 }
 
 
-// totuma.cn
 // 打印栈所有值
 void Stack_Show(LinkStack pStack) {
   LNode *node = pStack;
@@ -90,7 +83,6 @@ void Stack_Show(LinkStack pStack) {
 }
 
 
-// totuma.cn
 int main() {
   int i = -1;
   LinkStack pStack;

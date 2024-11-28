@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -63,7 +60,6 @@ bool Stack_Pop(SqStack &S, int &x) {
 }
 
 
-// totuma.cn
 // 创建邻接矩阵
 int Graph_Create (MGraph &G) {
   int vi, vj, weight;
@@ -100,7 +96,6 @@ int Graph_Create (MGraph &G) {
 }
 
 
-// totuma.cn
 // 打印图
 void Graph_Show (MGraph G) {
   printf("顶点：");
@@ -119,7 +114,6 @@ void Graph_Show (MGraph G) {
 }
 
 
-// totuma.cn
 // 求关键路径
 bool Critical_Path (MGraph G) {
   // 1.先求拓扑排序
@@ -296,7 +290,6 @@ bool Critical_Path (MGraph G) {
 }
 
 
-// totuma.cn
 int main () {
   MGraph G;
   // Graph_Create(G);

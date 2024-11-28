@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 // 定义二叉树节点的数据类型为整数
 #define ElemType int
 #include <stdlib.h>
@@ -19,7 +16,6 @@ typedef struct ThreadNode {
 ThreadNode *pre = NULL;
 
 
-// totuma.cn
 // 通过给定数组创建二叉树，0 表示空节点
 // nums 为数组、len 为数组长度、i 为当前数组下标
 ThreadTree Thread_Create(char* nums, int len, int i) {
@@ -36,7 +32,6 @@ ThreadTree Thread_Create(char* nums, int len, int i) {
 }
 
 
-// totuma.cn
 // 前序线索化函数
 void PreThread(ThreadTree T) {
   if (T != NULL) {
@@ -77,7 +72,6 @@ void CreatePreThread(ThreadTree T) {
 }
 
 
-// totuma.cn
 // 中序线索化函数
 void InThread(ThreadTree T) {
   if (T != NULL) {
@@ -116,7 +110,6 @@ void CreateInThread(ThreadTree T) {
 }
 
 
-// totuma.cn
 // 后序线索化函数
 void PostThread(ThreadTree T) {
   if (T != NULL) {
@@ -155,7 +148,6 @@ void CreatePostThread(ThreadTree T) {
 }
 
 
-// totuma.cn
 // 前序线索二叉树的前序遍历输出
 void PreThreadTraverse(ThreadTree T) {
   if (T != NULL) {
@@ -202,7 +194,6 @@ void PostThreadTraverse(ThreadTree T) {
 }
 
 
-// totuma.cn
 int main() {
   // 创建测试二叉树
   char nums[11] = {1, 2, 3, 0, 4, 0, 5, 0, 0, 6, 0};

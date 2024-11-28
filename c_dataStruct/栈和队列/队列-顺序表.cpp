@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 
 #define MAX_SIZE 100
@@ -27,7 +24,6 @@ int Queue_IsFull(SqQueue &Q) {
 }
 
 
-// totuma.cn
 // 入队操作
 int Queue_En(SqQueue &Q, ElemType x) {
   if (Q.rear == MAX_SIZE - 1) {
@@ -40,7 +36,6 @@ int Queue_En(SqQueue &Q, ElemType x) {
 }
 
 
-// totuma.cn
 // 出队操作
 int Queue_De(SqQueue &Q, ElemType &x) {
   if (Q.front == Q.rear) {
@@ -53,7 +48,6 @@ int Queue_De(SqQueue &Q, ElemType &x) {
 }
 
 
-// totuma.cn
 // 输出队列中的元素
 void Queue_Print(SqQueue &Q) {
   int i;
@@ -64,7 +58,6 @@ void Queue_Print(SqQueue &Q) {
 }
 
 
-// totuma.cn
 int main() {
   SqQueue Q;
   Queue_Init(Q);

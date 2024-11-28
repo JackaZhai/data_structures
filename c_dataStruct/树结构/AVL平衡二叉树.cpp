@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -37,7 +34,6 @@ int getBalanceFactor(TreeNode* node) {
 }
 
 
-// totuma.cn
 // 单旋转 - LL平衡旋转（右单旋转）
 TreeNode* LL(TreeNode* node) {
   // 创建一个指针 newRoot，用来存储将要成为新根节点的左孩子
@@ -55,7 +51,6 @@ TreeNode* LL(TreeNode* node) {
 }
 
 
-// totuma.cn
 // 单旋转 - RR平衡旋转（左单旋转）
 TreeNode* RR(TreeNode* node) {
   // 将右孩子作为新的根节点
@@ -73,7 +68,6 @@ TreeNode* RR(TreeNode* node) {
 }
 
 
-// totuma.cn
 // 插入节点
 TreeNode* insert(TreeNode* root, int data) {
   // 如果树为空，创建一个新节点并返回
@@ -127,7 +121,6 @@ TreeNode* insert(TreeNode* root, int data) {
 }
 
 
-// totuma.cn
 // 前序遍历以打印树的内容
 void preorderTraversal(TreeNode* root) {
   if (root == NULL)
@@ -149,7 +142,6 @@ void inorderTraversal(TreeNode* root) {
 }
 
 
-// totuma.cn
 // 主函数
 int main() {
   int arr[6] = {15, 3, 7, 10, 9, 8};

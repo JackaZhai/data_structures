@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,7 +17,6 @@ typedef struct {
 } MGraph;
 
 
-// totuma.cn
 // 创建邻接矩阵
 int Graph_Create (MGraph &G) {
   int vi, vj, weight;
@@ -56,7 +52,6 @@ int Graph_Create (MGraph &G) {
 }
 
 
-// totuma.cn
 // 输出最短路径的函数
 void printPath (int path[V][V], int start, int end) {
   // 如果路径前驱为-1，表示没有路径
@@ -69,7 +64,6 @@ void printPath (int path[V][V], int start, int end) {
 }
 
 
-// totuma.cn
 // Flyod-Warshall 算法函数
 void Floyd (MGraph G) {
   int dist[V][V]; // 最短路径的距离矩阵
@@ -132,7 +126,6 @@ void Floyd (MGraph G) {
 }
 
 
-// totuma.cn
 // 打印图
 void Graph_Show (MGraph G) {
   // 打印顶点

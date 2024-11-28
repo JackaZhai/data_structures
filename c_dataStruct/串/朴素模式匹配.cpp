@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +9,7 @@ typedef struct {
 } SString;
 
 
-// totuma.cn
+
 /**
  * 简单模式匹配，模式下标从 1 开始
  * @param S 被搜索的字符串
@@ -39,7 +36,7 @@ int Index (SString S, SString T) {
 }
 
 
-// totuma.cn
+
 /**
  * 下标从 0 开始的模式匹配，0 号位不用于存储 length，则可以存储字符
  * @param S 被搜索的字符串
@@ -66,7 +63,7 @@ int Index (SString S, SString T) {
  }
 
 
-// totuma.cn
+
 int main () {
   SString S, T;
   S.ch[1] = 'a';

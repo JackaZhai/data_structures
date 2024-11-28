@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -54,7 +51,6 @@ void Select(HuffmanTree &HT, int n, int &min1, int &min2) {
 }
 
 
-// totuma.cn
 // 构建哈夫曼树 HT=哈夫曼树、w=权值、n=待编码数量
 void Huffman_Create (HuffmanTree &HT, int *w, char *data, int n) {
   int m = 2 * n - 1; // 哈夫曼树的节点总数为 2n-1
@@ -78,7 +74,6 @@ void Huffman_Create (HuffmanTree &HT, int *w, char *data, int n) {
 }
 
 
-// totuma.cn
 // 生成哈夫曼编码 HT=哈夫曼树、HC=编码结果保存(相当于二维数组)、n=待编码字符个数
 void Huffman_Coding (HuffmanTree &HT, HuffmanCode &HC, int n) {
     // 开辟需要编码的个数空间(编码串地址)
@@ -109,7 +104,6 @@ void Huffman_Coding (HuffmanTree &HT, HuffmanCode &HC, int n) {
 }
 
 
-// totuma.cn
 // 打印哈夫曼树，n=编码节点个数
 void HuffmanTree_Print(HuffmanTree HT, int n) {
   printf("哈夫曼树为:>\n");

@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -65,7 +62,6 @@ bool Queue_De(SqQueue &Q, int &e) {
 }
 
 
-// totuma.cn
 void ALGraph_Create (ALGraph &G) {
   // 对顶点表结点进行初始化
   for (int i = 0; i < MaxVertexNum; i++) {
@@ -111,7 +107,6 @@ void ALGraph_Create (ALGraph &G) {
 }
 
 
-// totuma.cn
 // 访问标记数组
 bool BFSVisited[MaxVertexNum];
 // 对图G进行广度优先遍历
@@ -148,7 +143,6 @@ void BFS_Traverse (ALGraph G) {
 }
 
 
-// totuma.cn
 // 访问标记数组
 bool DFSVisited[MaxVertexNum];
 // 深度优先遍历
@@ -179,7 +173,6 @@ void DFS_Traverse (ALGraph G) {
 }
 
 
-// totuma.cn
 void ALGraph_Show (ALGraph G) {
   for (int i = 0; i < G.vexnum; i++) {
     printf("%c", G.adjList[i].data);

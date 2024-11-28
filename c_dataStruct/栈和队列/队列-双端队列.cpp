@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,7 +27,6 @@ int isFull(Deque &Q) {
 }
 
 
-// totuma.cn
 // 在队头插入元素
 void Deque_InsertFront(Deque &Q, int element) {
   if (Q.front == (Q.rear + 1) % MAX_SIZE) {
@@ -42,7 +38,6 @@ void Deque_InsertFront(Deque &Q, int element) {
 }
 
 
-// totuma.cn
 // 在队尾插入元素
 void Deque_InsertRear(Deque &Q, int element) {
   if (Q.front == (Q.rear + 1) % MAX_SIZE) {
@@ -54,7 +49,6 @@ void Deque_InsertRear(Deque &Q, int element) {
 }
 
 
-// totuma.cn
 // 从队头删除元素
 int Deque_DeleteFront(Deque &Q) {
   if (Q.front == Q.rear) {
@@ -68,7 +62,6 @@ int Deque_DeleteFront(Deque &Q) {
 }
 
 
-// totuma.cn
 // 从队尾删除元素
 int Deque_DeleteRear(Deque &Q) {
   if (Q.front == Q.rear) {
@@ -81,7 +74,6 @@ int Deque_DeleteRear(Deque &Q) {
 }
 
 
-// totuma.cn
 void Deque_print (Deque Q) {
   // 输出队列中的值
   printf("队列中的值: ");
@@ -93,7 +85,6 @@ void Deque_print (Deque Q) {
 }
 
 
-// totuma.cn
 int main() {
   Deque Q;
   Deque_Init(Q);

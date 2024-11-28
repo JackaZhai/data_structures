@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -53,7 +50,6 @@ void Queue_Create(LinkQueue* Q) {
 }
 
 
-// totuma.cn
 // 新元素入队
 bool Queue_En(LinkQueue* Q, int e) {
   LNode* pTemp = (LNode*)malloc(sizeof(LNode));
@@ -71,7 +67,6 @@ bool Queue_En(LinkQueue* Q, int e) {
 }
 
 
-// totuma.cn
 // 出队
 bool Queue_De(LinkQueue* Q, int* e) {
   if (Q->front == NULL) return false;
@@ -87,7 +82,6 @@ bool Queue_De(LinkQueue* Q, int* e) {
 }
 
 
-// totuma.cn
 // 打印队列所有值
 void Queue_Show(LinkQueue* Q) {
   LNode* node = Q->front;
@@ -100,7 +94,6 @@ void Queue_Show(LinkQueue* Q) {
 }
 
 
-// totuma.cn
 int main() {
   int i = -1;
   LinkQueue Q;

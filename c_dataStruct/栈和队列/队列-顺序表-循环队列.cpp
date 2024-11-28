@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,7 +24,6 @@ bool Queue_IsEmpty(SqQueue Q) {
 }
 
 
-// totuma.cn
 // 入队操作，将元素 x 添加到队列尾部
 bool Queue_En(SqQueue &Q, ElemType x) {
   // 检查队列是否已满，如果队尾指针的下一个位置等于队头指针，表示队列已满
@@ -42,7 +38,6 @@ bool Queue_En(SqQueue &Q, ElemType x) {
 }
 
 
-// totuma.cn
 // 出队操作，将队列头部元素存储在 x 中，并从队列中删除
 bool Queue_De(SqQueue &Q, ElemType &x) {
   // 检查队列是否为空，如果队尾指针等于队头指针，表示队列为空
@@ -56,7 +51,6 @@ bool Queue_De(SqQueue &Q, ElemType &x) {
 }
 
 
-// totuma.cn
 int main() {
   SqQueue myQueue;
   Queue_Init(myQueue); // 初始化队列

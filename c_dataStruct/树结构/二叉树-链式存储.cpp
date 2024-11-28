@@ -1,6 +1,3 @@
-
-// 全站内容仅供学习，禁止以原文或修改形式后的任何企业使用，请准守“一般著作权”协议
-// 来源:totuma.cn
 #include <stdio.h>
 #include <stdlib.h>
 // 树存储结构
@@ -43,7 +40,6 @@ bool Queue_De(SqQueue &Q, BiTree &e) {
 }
 
 
-// totuma.cn
 // 通过给定数组创建二叉树，0为空结点
 // nums 为数组、len 为数组长度、i 为当前数组下标
 BiTNode * BiTree_Create (char* nums, int len , int i) {
@@ -56,7 +52,6 @@ BiTNode * BiTree_Create (char* nums, int len , int i) {
 }
 
 
-// totuma.cn
 // 先序遍历: 根左右(NLR)
 void Order_Pre(BiTree tree) {
   if(tree == NULL) return;
@@ -66,7 +61,6 @@ void Order_Pre(BiTree tree) {
 }
 
 
-// totuma.cn
 // 中序遍历: 左根右(LNR)
 void Order_In(BiTree tree) {
   if(tree == NULL) return;
@@ -76,7 +70,6 @@ void Order_In(BiTree tree) {
 }
 
 
-// totuma.cn
 // 后序遍历: 左根右(LRN)
 void Order_Post(BiTree tree) {
   if(tree == NULL) return;
@@ -86,7 +79,6 @@ void Order_Post(BiTree tree) {
 }
 
 
-// totuma.cn
 // 层次遍历
 void Order_Level (BiTree tree) {
   SqQueue Q; // 初始化队列
@@ -104,7 +96,6 @@ void Order_Level (BiTree tree) {
 }
 
 
-// totuma.cn
 int main() {
   char nums[11] = {1, 2, 3, 0, 4, 0, 5, 0, 0, 6, 0};
   BiTree tree = BiTree_Create(nums, 11, 0);
